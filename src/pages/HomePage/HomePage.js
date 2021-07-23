@@ -1,7 +1,7 @@
 import { Col, Row } from "antd";
 import Layout, { Content, Footer, Header } from "antd/lib/layout/layout";
 import { Component } from "react";
-import HomeCarousel from "../../components/HomeCarousel";
+import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 
 class HomePage extends Component {
   constructor(props) {

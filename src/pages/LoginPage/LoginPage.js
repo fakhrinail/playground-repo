@@ -1,7 +1,7 @@
-import { Component } from 'react';
-import LoginForm from '../../components/LoginForm';
+import { Component } from "react";
+import LoginForm from "../../components/LoginForm/LoginForm";
 
-import './LoginPage.css';
+import "./LoginPage.css";
 
 class LoginPage extends Component {
   constructor(props) {
@@ -10,13 +10,13 @@ class LoginPage extends Component {
   }
 
   loginFormHandler() {
-    console.log('pass login');
+    console.log("pass login");
     this.props.onLogin();
   }
 
   render() {
     return (
-      <div className='login-background'>
+      <div className="login-background">
         <LoginForm onSubmit={this.loginFormHandler} />
       </div>
     );
