@@ -4,6 +4,8 @@ import { Component } from "react";
 import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
 import HotelEventCard from "../../components/HotelEventCard/HotelEventCard";
 import MainHeader from "../../components/MainHeader/MainHeader";
+import MenuButton from "../../components/MenuButton/MenuButton";
+import MenuButtonGrid from "../../components/MenuButtonGrid/MenuButtonGrid";
 import OfferCard from "../../components/OfferCard/OfferCard";
 
 class HomePage extends Component {
@@ -18,7 +20,9 @@ class HomePage extends Component {
           <Row>
             <MainHeader />
           </Row>
-          <Row>Main menu</Row>
+          <Row>
+            <MenuButtonGrid />
+          </Row>
           <Row>
             <Col span={24}>
               <HomeCarousel />

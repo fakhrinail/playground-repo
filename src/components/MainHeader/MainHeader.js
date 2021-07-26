@@ -1,6 +1,8 @@
 import { Col, Row } from "antd";
 import { Component } from "react";
 
+import "./MainHeader.css";
+
 class MainHeader extends Component {
   constructor(props) {
     super(props);
@@ -11,10 +13,11 @@ class MainHeader extends Component {
       <Row>
         <Col span={24} className="col-header">
           <Row>
-            <Col>Sidebar</Col>
-            <Col>Welcome username</Col>
-            <Col>Language picker</Col>
+            <Col span={4}>Sidebar</Col>
+            <Col span={16}>Welcome username</Col>
+            <Col span={4}>Language picker</Col>
           </Row>
+          <Row>Sidebar</Row>
         </Col>
       </Row>
     );
