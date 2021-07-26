@@ -2,6 +2,7 @@
   position: fixed;
   top: 0;
   background: #c3a56b;
-  max-width: 100%;
+  max-width: 450px;
+  width: 100%;
   z-index: 100000;
 }

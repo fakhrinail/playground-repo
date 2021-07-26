@@ -13,11 +13,11 @@ class MenuButton extends Component {
     return (
       <Col className="col-menu" span={6}>
         <Row>
-          <Col span={1} />
+          <Col span={1}></Col>
           <Col span={22}>
             <Text>{this.props.title}</Text>
           </Col>
-          <Col span={1} />
+          <Col span={1}></Col>
         </Row>
       </Col>
     );

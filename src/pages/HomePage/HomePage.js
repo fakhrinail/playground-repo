@@ -1,10 +1,10 @@
 import { Col, Divider, Row } from "antd";
-import Layout, { Content, Footer, Header } from "antd/lib/layout/layout";
+import Layout, { Content } from "antd/lib/layout/layout";
 import { Component } from "react";
 import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
+import HomeFooter from "../../components/HomeFooter/HomeFooter";
 import HotelEventCard from "../../components/HotelEventCard/HotelEventCard";
 import MainHeader from "../../components/MainHeader/MainHeader";
-import MenuButton from "../../components/MenuButton/MenuButton";
 import MenuButtonGrid from "../../components/MenuButtonGrid/MenuButtonGrid";
 import OfferCard from "../../components/OfferCard/OfferCard";
 
@@ -40,8 +40,10 @@ class HomePage extends Component {
               <OfferCard />
             </Col>
           </Row>
+          <Row>
+            <HomeFooter />
+          </Row>
         </Content>
-        <Footer></Footer>
       </Layout>
     );
   }
