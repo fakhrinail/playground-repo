@@ -1,7 +1,10 @@
-import { Card } from "antd";
+import { Card, Col, Row } from "antd";
 import Meta from "antd/lib/card/Meta";
+import Text from "antd/lib/typography/Text";
 import { Component } from "react";
 import DetailButton from "../DetailButton/DetailButton";
+
+import "./OfferCard.css";
 
 class OfferCard extends Component {
   constructor(props) {
@@ -19,8 +22,19 @@ class OfferCard extends Component {
         }
         bordered
       >
-        <Meta description="Offer description $price" title="Offer title" />
-        <DetailButton />
+        <Row className="row-offer-desc">
+          <Col>
+            <Text>Description</Text>
+            <br />
+            <Text>Price</Text>
+          </Col>
+        </Row>
+        <Row className="row-offer-btn">
+          <Col span={12} />
+          <Col span={12}>
+            <DetailButton />
+          </Col>
+        </Row>
       </Card>
     );
   }

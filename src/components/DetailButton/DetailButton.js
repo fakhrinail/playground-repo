@@ -9,7 +9,11 @@ class DetailButton extends Component {
   }
 
   render() {
-    return <Button type="default">Detail</Button>;
+    return (
+      <Button className="detail-btn" type="default">
+        Detail
+      </Button>
+    );
   }
 }
 

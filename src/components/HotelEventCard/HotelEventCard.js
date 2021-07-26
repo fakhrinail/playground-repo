@@ -1,6 +1,10 @@
-import { Button, Card } from "antd";
+import { Card, Col, Row } from "antd";
 import Meta from "antd/lib/card/Meta";
+import Text from "antd/lib/typography/Text";
 import { Component } from "react";
+import DetailButton from "../DetailButton/DetailButton";
+
+import "./HotelEventCard.css";
 
 class HotelEventCard extends Component {
   constructor(props) {
@@ -18,8 +22,19 @@ class HotelEventCard extends Component {
         }
         bordered="true"
       >
-        <Meta title="Hotel event title" description="Hotel event description" />
-        <Button type="default">Detail</Button>
+        <Row>
+          <Col span={24}>
+            <Text>Description</Text>
+            <br />
+            <Text>Price</Text>
+          </Col>
+        </Row>
+        <Row className="row-event-btn">
+          <Col span={12}></Col>
+          <Col span={12}>
+            <DetailButton />
+          </Col>
+        </Row>
       </Card>
     );
   }
