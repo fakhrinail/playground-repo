@@ -1,8 +1,9 @@
-import { Button, Card } from "antd";
+import { Card } from "antd";
 import Meta from "antd/lib/card/Meta";
 import { Component } from "react";
+import DetailButton from "../DetailButton/DetailButton";
 
-class HotelEventCard extends Component {
+class OfferCard extends Component {
   constructor(props) {
     super(props);
   }
@@ -16,13 +17,13 @@ class HotelEventCard extends Component {
             src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
           />
         }
-        bordered="true"
+        bordered
       >
-        <Meta title="Hotel event title" description="Hotel event description" />
-        <Button type="default">Detail</Button>
+        <Meta description="Offer description $price" title="Offer title" />
+        <DetailButton />
       </Card>
     );
   }
 }
 
-export default HotelEventCard;
+export default OfferCard;

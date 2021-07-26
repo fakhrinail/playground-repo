@@ -1,6 +1,6 @@
-import { Button, Card, Input, Row } from 'antd';
-import { Component } from 'react';
-import 'antd/dist/antd.css';
+import { Button, Card, Input, Row } from "antd";
+import { Component } from "react";
+import "antd/dist/antd.css";
 
 class LoginForm extends Component {
   constructor(props) {
@@ -9,24 +9,25 @@ class LoginForm extends Component {
   }
 
   loginButtonClickHandler() {
-    console.log('logged in');
+    console.log("logged in");
     this.props.onSubmit();
   }
 
   render(props) {
     return (
-      <Card title='Stayplease'>
+      <Card title="Stayplease">
         <Row>
-          <Input size='large' placeholder='Room No. (Example 0101)'></Input>
+          <Input size="large" placeholder="Room No. (Example 0101)"></Input>
         </Row>
         <Row>
-          <Input size='large' placeholder='Last Name'></Input>
+          <Input size="large" placeholder="Last Name"></Input>
         </Row>
         <Row>
           <Button
-            type='primary'
-            style={{ background: '#C3A56B', width: '100%' }}
+            type="primary"
+            style={{ background: "#C3A56B" }}
             onClick={this.loginButtonClickHandler}
+            block
           >
             Login
           </Button>
