@@ -23,6 +23,7 @@ class HomePage extends Component {
           <Row>
             <Col span={1} />
             <Col span={22}>
+              {/* temporary, should use list of infos and map to rows */}
               <Row className="row-home-info">
                 <Col span={12}>Room number</Col>
                 <Col className="col-right-info" span={12}>
@@ -41,31 +42,31 @@ class HomePage extends Component {
                   Date
                 </Col>
               </Row>
-            </Col>
-            <Col span={1} />
-          </Row>
-          <Row>
-            <Col span={24}>
+
               <Row className="row-home-menu">
                 <MenuButtonGrid />
               </Row>
             </Col>
+            <Col span={1} />
           </Row>
 
           <HomeCarousel />
 
           <Divider>Hotel Event</Divider>
+          {/* temporary, title and desc should be passed using props */}
+          {/* should use list of events and map to cards */}
           <HotelEventCard />
           <HotelEventCard />
           <HotelEventCard />
 
           <Divider>In Room Dining Offer</Divider>
+          {/* temporary, title and desc should be passed using props */}
+          {/* should use list of offers and map to cards */}
           <OfferCard />
           <OfferCard />
           <OfferCard />
-          <Row>
-            <HomeFooter />
-          </Row>
+
+          <HomeFooter />
         </Content>
       </Layout>
     );

@@ -21,9 +21,9 @@ class LoginPage extends Component {
   render() {
     return (
       <Layout>
-        <Content>
+        <Content className="content-login">
           <Row>
-            <Col span={24}></Col>
+            <Col span={24}>Language picker</Col>
           </Row>
           <Row className="login-background">
             <Col span={24}>

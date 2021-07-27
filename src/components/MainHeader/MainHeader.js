@@ -14,10 +14,11 @@ class MainHeader extends Component {
         <Col span={24} className="col-header">
           <Row>
             <Col span={4}>Sidebar</Col>
-            <Col span={16}>Welcome username</Col>
+            <Col className="col-header-main-title" span={16}>
+              Welcome username
+            </Col>
             <Col span={4}>Language picker</Col>
           </Row>
-          <Row>Sidebar</Row>
         </Col>
       </Row>
     );

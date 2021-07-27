@@ -11,24 +11,26 @@ class HomeFooter extends Component {
 
   render() {
     return (
-      <Col className="col-home-footer" span={24}>
-        <Row>
-          <Col span={12}>
-            <Row>
-              <Col span={24}>
-                <Text>Home</Text>
-              </Col>
-            </Row>
-          </Col>
-          <Col span={12}>
-            <Row>
-              <Col span={24}>
-                <Text>Order</Text>
-              </Col>
-            </Row>
-          </Col>
-        </Row>
-      </Col>
+      <Row>
+        <Col className="col-home-footer" span={24}>
+          <Row>
+            <Col span={12}>
+              <Row>
+                <Col span={24}>
+                  <Text>Home</Text>
+                </Col>
+              </Row>
+            </Col>
+            <Col span={12}>
+              <Row>
+                <Col span={24}>
+                  <Text>Order</Text>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
+        </Col>
+      </Row>
     );
   }
 }

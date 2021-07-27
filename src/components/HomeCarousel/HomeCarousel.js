@@ -4,14 +4,6 @@ import { Component } from "react";
 
 import "./HomeCarousel.css";
 
-const contentStyle = {
-  height: "150px",
-  lineHeight: "150px",
-  color: "#fff",
-  textAlign: "center",
-  background: "#364d79",
-};
-
 const dummyContents = [
   { titleText: "Dummy title 1", descText: "Dummy desc 1" },
   { titleText: "Dummy title 2", descText: "Dummy desc 2" },
@@ -25,23 +17,27 @@ class HomeCarousel extends Component {
 
   render() {
     return (
-      <Carousel dotPosition={"bottom"}>
-        {dummyContents.map((content) => (
-          <div key={content.descText}>
-            <Row className="row-home-carousel">
-              <Col className="col-home-carousel" span={16}>
-                <Text className="text-home-carousel-title">
-                  {content.titleText}
-                </Text>
-                <br />
-                <Text className="text-home-carousel-desc">
-                  {content.descText}
-                </Text>
-              </Col>
-            </Row>
-          </div>
-        ))}
-      </Carousel>
+      <Row className="row-carousel">
+        <Col span={24}>
+          <Carousel dotPosition={"bottom"}>
+            {dummyContents.map((content) => (
+              <div key={content.descText}>
+                <Row className="row-home-carousel">
+                  <Col className="col-home-carousel" span={16}>
+                    <Text className="text-home-carousel-title">
+                      {content.titleText}
+                    </Text>
+                    <br />
+                    <Text className="text-home-carousel-desc">
+                      {content.descText}
+                    </Text>
+                  </Col>
+                </Row>
+              </div>
+            ))}
+          </Carousel>
+        </Col>
+      </Row>
     );
   }
 }
