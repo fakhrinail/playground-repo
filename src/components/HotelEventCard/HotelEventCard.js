@@ -13,29 +13,35 @@ class HotelEventCard extends Component {
 
   render() {
     return (
-      <Card
-        cover={
-          <img
-            alt="example"
-            src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
-          />
-        }
-        bordered="true"
-      >
-        <Row>
-          <Col span={24}>
-            <Text>Description</Text>
-            <br />
-            <Text>Price</Text>
-          </Col>
-        </Row>
-        <Row className="row-event-btn">
-          <Col span={12}></Col>
-          <Col span={12}>
-            <DetailButton />
-          </Col>
-        </Row>
-      </Card>
+      <Row className="row-card">
+        <Col span={1} />
+        <Col span={22}>
+          <Card
+            cover={
+              <img
+                alt="example"
+                src="https://gw.alipayobjects.com/zos/rmsportal/JiqGstEfoWAOHiTxclqi.png"
+              />
+            }
+            bordered="true"
+          >
+            <Row>
+              <Col span={24}>
+                <Text>Title</Text>
+                <br />
+                <Text>Description</Text>
+              </Col>
+            </Row>
+            <Row className="row-event-btn">
+              <Col span={12}></Col>
+              <Col span={12}>
+                <DetailButton />
+              </Col>
+            </Row>
+          </Card>
+        </Col>
+        <Col span={1} />
+      </Row>
     );
   }
 }
