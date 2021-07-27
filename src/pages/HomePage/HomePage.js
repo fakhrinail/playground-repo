@@ -20,46 +20,49 @@ class HomePage extends Component {
       <Layout className="layout-mobile">
         <Content>
           <MainHeader />
-          <Row className="row-home-content">
-            <MenuButtonGrid />
+          <Row>
+            <Col span={1} />
+            <Col span={22}>
+              <Row className="row-home-info">
+                <Col span={12}>Room number</Col>
+                <Col className="col-right-info" span={12}>
+                  City name
+                </Col>
+              </Row>
+              <Row className="row-home-info">
+                <Col span={12}>Check in</Col>
+                <Col className="col-right-info" span={12}>
+                  Weather
+                </Col>
+              </Row>
+              <Row className="row-home-info">
+                <Col span={12}>Check out</Col>
+                <Col className="col-right-info" span={12}>
+                  Date
+                </Col>
+              </Row>
+            </Col>
+            <Col span={1} />
           </Row>
           <Row>
             <Col span={24}>
-              <HomeCarousel />
+              <Row className="row-home-menu">
+                <MenuButtonGrid />
+              </Row>
             </Col>
           </Row>
+
+          <HomeCarousel />
+
           <Divider>Hotel Event</Divider>
-          <Row>
-            <Col span={24}>
-              <HotelEventCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-              <HotelEventCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-              <HotelEventCard />
-            </Col>
-          </Row>
+          <HotelEventCard />
+          <HotelEventCard />
+          <HotelEventCard />
+
           <Divider>In Room Dining Offer</Divider>
-          <Row>
-            <Col span={24}>
-              <OfferCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-              <OfferCard />
-            </Col>
-          </Row>
-          <Row>
-            <Col span={24}>
-              <OfferCard />
-            </Col>
-          </Row>
+          <OfferCard />
+          <OfferCard />
+          <OfferCard />
           <Row>
             <HomeFooter />
           </Row>
