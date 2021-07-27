@@ -23,6 +23,7 @@ const dummyLangs = [
 class LanguagePicker extends Component {
   constructor(props) {
     super(props);
+    this.state = { language: "en" };
   }
 
   render() {
@@ -37,7 +38,7 @@ class LanguagePicker extends Component {
         onOk={(language) => this.setState({ language: language })}
         onChange={(language) => this.setState({ language: language })}
       >
-        <List.Item>Test</List.Item>
+        <List.Item>Language</List.Item>
       </Picker>
     );
   }

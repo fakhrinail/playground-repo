@@ -1,4 +1,4 @@
-import { Col, Divider, Row } from "antd";
+import { Button, Col, Divider, Row } from "antd";
 import Layout, { Content } from "antd/lib/layout/layout";
 import { Component } from "react";
 import HomeCarousel from "../../components/HomeCarousel/HomeCarousel";
@@ -13,13 +13,25 @@ import "./HomePage.css";
 class HomePage extends Component {
   constructor(props) {
     super(props);
+    this.state = { showSidebar: false };
+    this.sidebarClickHandler = this.sidebarClickHandler.bind(this);
+  }
+
+  sidebarClickHandler() {
+    console.log("toggle sidebar");
+    this.setState({ showSidebar: !this.state.showSidebar });
   }
 
   render() {
     return (
       <Layout className="layout-mobile">
         <Content>
-          <MainHeader />
+          <MainHeader onSidebarClick={this.sidebarClickHandler} />
+
+          <Row className="row-sidebar" hidden={!this.state.showSidebar}>
+            <Col>Sidebar content</Col>
+          </Row>
+
           <Row>
             <Col span={1} />
             <Col span={22}>

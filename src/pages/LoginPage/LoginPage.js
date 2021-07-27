@@ -3,6 +3,7 @@ import { Picker, List } from "antd-mobile";
 import Layout, { Content } from "antd/lib/layout/layout";
 import Text from "antd/lib/typography/Text";
 import { Component } from "react";
+import LanguagePicker from "../../components/LanguagePicker/LanguagePicker";
 import LoginForm from "../../components/LoginForm/LoginForm";
 
 import "./LoginPage.css";
@@ -23,7 +24,7 @@ class LoginPage extends Component {
       <Layout>
         <Content className="content-login">
           <Row>
-            <Col span={24}>Language picker</Col>
+            <Col span={24}>{/* <LanguagePicker /> */}</Col>
           </Row>
           <Row className="login-background">
             <Col span={24}>

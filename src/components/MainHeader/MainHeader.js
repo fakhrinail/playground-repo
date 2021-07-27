@@ -6,6 +6,7 @@ import "./MainHeader.css";
 class MainHeader extends Component {
   constructor(props) {
     super(props);
+    this.props.onSidebarClick.bind(this);
   }
 
   render() {
@@ -13,7 +14,9 @@ class MainHeader extends Component {
       <Row>
         <Col span={24} className="col-header">
           <Row>
-            <Col span={4}>Sidebar</Col>
+            <Col onClick={this.props.onSidebarClick} span={4}>
+              Sidebar
+            </Col>
             <Col className="col-header-main-title" span={16}>
               Welcome username
             </Col>
